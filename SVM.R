@@ -112,6 +112,6 @@ X.test <- Daten.test[,c("name", "year","km_driven","ex_showroom_price")]
 prognosen <- predict(model,X.test)
 
 
-# Berechnung des mittleren Prognosefehlers (MAD)
+# mean absolute percentage error (MAPE)
 y.test <- Daten.test[,"selling_price"]
     mean(abs((y.test-prognosen)/y.test))*100
