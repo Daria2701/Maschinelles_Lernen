@@ -21,7 +21,7 @@ library(e1071)
 ##################
 
 #Pfad setzen
-setwd("C:/Users/darja/Downloads")
+setwd("C:/Users/.../...")
 
 #ersetzt die Leerzeichen in den Daten durch R verstandliche "NA" Werte
 Daten <- read.csv("bikes_imputed.csv", header=TRUE, sep=",", fill=TRUE, stringsAsFactors=TRUE, na.strings=" ") 
